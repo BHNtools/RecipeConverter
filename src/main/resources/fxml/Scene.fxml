@@ -1,14 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml" fx:controller="com.bhntools.convertit.ConverterFXControl">
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bhntools.convertit.ConverterFXControl">
     <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+      <BorderPane prefHeight="550.0" prefWidth="550.0">
+         <top>
+            <HBox id="hbx_top" fx:id="hbx_top" prefHeight="44.0" prefWidth="468.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="47.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/TimeMagine_img.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="457.0" style="-fx-background-color: #F7E7CE;" text="Converter" textAlignment="CENTER" textFill="#0808b5">
+                     <font>
+                        <Font name="American Typewriter" size="39.0" />
+                     </font>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Label>
+                  <ImageView fitHeight="47.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/TimeMagine_img.png" />
+                     </image>
+                  </ImageView>
+               </children></HBox>
+         </top>
+         <bottom>
+            <HBox id="bottom_border" fx:id="bottom_border" prefHeight="25.0" prefWidth="550.0" style="-fx-background-color: #FA8072;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/BHNtoolsLogo.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="V_RESIZE" />
+                     </cursor>
+                  </ImageView>
+                  <Label id="bottom_border" fx:id="lbl_infosBulles_df" alignment="CENTER" blendMode="MULTIPLY" contentDisplay="CENTER" prefHeight="48.0" prefWidth="461.0" text="Converter©2017 - BHNtools&#10;Contact : bhndevtools@gmail.com" textAlignment="CENTER" textFill="#0910dd" textOverrun="CENTER_ELLIPSIS">
+                     <effect>
+                        <Bloom threshold="0.0" />
+                     </effect>
+                  </Label>
+                  <ImageView fitHeight="58.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                        <Cursor fx:constant="V_RESIZE" />
+                     </cursor>
+                     <image>
+                        <Image url="@../images/BHNtoolsLogo.png" />
+                     </image>
+                  </ImageView>
+               </children></HBox>
+         </bottom>
+         <left>
+            <VBox prefHeight="454.0" prefWidth="49.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <VBox prefHeight="456.0" prefWidth="46.0" BorderPane.alignment="CENTER" />
+         </right>
+         <center>
+            <VBox id="bottom_border" opacity="0.81" prefHeight="443.0" prefWidth="335.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
     </children>
 </AnchorPane>

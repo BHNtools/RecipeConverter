@@ -6,20 +6,32 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.Tooltip;
+import javafx.scene.layout.Background;
+import javafx.scene.paint.Color;
 
 public class ConverterFXControl implements Initializable {
     
     @FXML
-    private Label label;
+    private Label lbl_infosBulles_df;
+
+   
+    /**
+     * Initializes the controller class.
+     * @param url
+     * @param rb
+     */
     
-    @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
-    }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
+        //lbl_infosBulles_df.setText("Converter©2017 - V1.0.0");
+        //lbl_infosBulles_df.setTextFill(Color.RED);
+        
+        final Tooltip tooltip = new Tooltip();
+        
+        tooltip.setText("Converter©2017 - V1.0.0 ");
+        lbl_infosBulles_df.setTooltip(tooltip);
+
+    }
 }

@@ -9,6 +9,11 @@ import javafx.stage.Stage;
 import static javafx.application.Application.launch;
 import static javafx.application.Application.launch;
 import static javafx.application.Application.launch;
+import javafx.application.Platform;
+import javafx.event.EventHandler;
+import javafx.scene.paint.Color;
+import javafx.stage.WindowEvent;
+
 
 
 public class ConverterTM extends Application {
@@ -17,12 +22,17 @@ public class ConverterTM extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/Scene.fxml"));
         
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root,Color.BEIGE);
         scene.getStylesheets().add("/styles/Styles.css");
+        
+        //Changing scene background
+        root.setStyle("-fx-background-color: transparent;");  
+        scene.setFill(Color.BEIGE);       
         
         stage.setTitle("PROJECT : Maven JavaFx - CONVERTER");
         stage.setScene(scene);
         stage.show();
+
     }
 
     /**

@@ -31,6 +31,12 @@ public class ConverterTM extends Application {
         
         stage.setTitle("PROJECT : Maven JavaFx - CONVERTER");
         stage.setScene(scene);
+        
+
+
+        //Disable resize scene
+        stage.setResizable(false);
+        
         stage.show();
 
     }

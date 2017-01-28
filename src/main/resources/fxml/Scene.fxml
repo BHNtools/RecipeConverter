@@ -104,7 +104,7 @@
                            <content>
                               <AnchorPane fx:id="onglet_FC" minHeight="0.0" minWidth="0.0" prefHeight="327.0" prefWidth="455.0">
                                  <children>
-                                    <TextField fx:id="txtIn_Farenhit" layoutX="91.0" layoutY="116.0" onMouseClicked="#OnMouseClicked_Farenhit" prefHeight="45.0" prefWidth="90.0" promptText="ValueInFarenhit" text="32">
+                                    <TextField fx:id="txtIn_Farenhit" layoutX="91.0" layoutY="116.0" onKeyReleased="#OnMouseClicked_Celsius" onMouseClicked="#OnMouseClicked_Farenhit" prefHeight="45.0" prefWidth="90.0" promptText="ValueInFarenhit" text="32">
                                        <font>
                                           <Font size="10.0" />
                                        </font>
@@ -119,7 +119,7 @@
                                           <Font name="System Bold" size="40.0" />
                                        </font>
                                     </Label>
-                                    <TextField fx:id="txtIn_Celsius" alignment="CENTER" layoutX="297.0" layoutY="116.0" onMouseClicked="#OnMouseClicked_Celsius" prefHeight="45.0" prefWidth="90.0" promptText="ValueInCelsius" text="0">
+                                    <TextField fx:id="txtIn_Celsius" alignment="CENTER" layoutX="297.0" layoutY="116.0" onKeyReleased="#OnMouseClicked_Farenhit" onMouseClicked="#OnMouseClicked_Celsius" prefHeight="45.0" prefWidth="90.0" promptText="ValueInCelsius" text="0">
                                        <font>
                                           <Font size="10.0" />
                                        </font>

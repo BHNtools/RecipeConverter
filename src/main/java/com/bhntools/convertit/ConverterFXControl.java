@@ -79,8 +79,7 @@ public class ConverterFXControl implements Initializable {
     }
     */
     
-    
-
+   
     public boolean isDouble(String value) {
         try {
             Double.parseDouble(value);
@@ -125,7 +124,7 @@ public class ConverterFXControl implements Initializable {
     }
     
         
-    @FXML public void OnMouseClicked_Farenhit(){
+    @FXML public void OnMouseClicked_Farenhit(){                
         // GET FARENHIT USER VALUE
         String TextCelsius;
         TextCelsius = txtIn_Celsius.getText();

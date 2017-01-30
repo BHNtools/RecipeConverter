@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.web.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.image.*?>
@@ -104,7 +105,7 @@
                            <content>
                               <AnchorPane fx:id="onglet_FC" minHeight="0.0" minWidth="0.0" prefHeight="327.0" prefWidth="455.0">
                                  <children>
-                                    <TextField fx:id="txtIn_Farenhit" layoutX="91.0" layoutY="116.0" onKeyReleased="#OnMouseClicked_Celsius" onMouseClicked="#OnMouseClicked_Farenhit" prefHeight="45.0" prefWidth="90.0" promptText="ValueInFarenhit" text="32">
+                                    <TextField fx:id="txtIn_Farenhit" alignment="CENTER" layoutX="91.0" layoutY="116.0" onKeyReleased="#OnMouseClicked_Celsius" onMouseClicked="#OnMouseClicked_Farenhit" prefHeight="45.0" prefWidth="90.0" promptText="ValueInFarenhit" text="32">
                                        <font>
                                           <Font size="10.0" />
                                        </font>
@@ -134,7 +135,7 @@
                                           <Font size="18.0" />
                                        </font>
                                     </Label>
-                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="93.0" layoutY="38.0" prefHeight="35.0" prefWidth="294.0" text="Temprature Converter" textAlignment="CENTER" textFill="#ba114c">
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="89.0" layoutY="51.0" prefHeight="35.0" prefWidth="294.0" text="Temprature Converter" textAlignment="CENTER" textFill="#ba114c">
                                        <font>
                                           <Font name="System Bold Italic" size="24.0" />
                                        </font>
@@ -155,6 +156,114 @@
                                  </children>
                               </AnchorPane>
                            </content>
+                        </Tab>
+                        <Tab text="Ovens">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="199.0" layoutY="15.0" text="°F" textFill="#970707">
+                                       <font>
+                                          <Font name="System Bold" size="40.0" />
+                                       </font>
+                                    </Label>
+                                    <Label blendMode="DARKEN" contentDisplay="CENTER" layoutX="21.0" layoutY="60.0" prefHeight="29.0" prefWidth="136.0" text="Very soft =" textAlignment="CENTER" textFill="#102be5" textOverrun="CENTER_WORD_ELLIPSIS">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                       <effect>
+                                          <Blend />
+                                       </effect>
+                                    </Label>
+                                    <Label blendMode="DARKEN" contentDisplay="CENTER" layoutX="21.0" layoutY="89.0" prefHeight="29.0" prefWidth="120.0" text="Mild =" textAlignment="CENTER" textFill="#7d10e5" textOverrun="CENTER_WORD_ELLIPSIS">
+                                       <effect>
+                                          <Blend />
+                                       </effect>
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label blendMode="DARKEN" contentDisplay="CENTER" layoutX="21.0" layoutY="119.0" prefHeight="29.0" prefWidth="120.0" text="Medium = " textAlignment="CENTER" textFill="#e39512" textOverrun="CENTER_WORD_ELLIPSIS">
+                                       <effect>
+                                          <Blend />
+                                       </effect>
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label blendMode="DARKEN" contentDisplay="CENTER" layoutX="21.0" layoutY="177.0" prefHeight="29.0" prefWidth="120.0" text="Very hot =" textAlignment="CENTER" textFill="#e31010" textOverrun="CENTER_WORD_ELLIPSIS">
+                                       <effect>
+                                          <Blend />
+                                       </effect>
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="318.0" layoutY="15.0" prefHeight="39.0" prefWidth="50.0" text="°C" textFill="#010897">
+                                       <font>
+                                          <Font name="System Bold" size="40.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="txtIn_Farenhit13" alignment="CENTER" disable="true" editable="false" layoutX="285.0" layoutY="61.0" onKeyReleased="#OnMouseClicked_Celsius" onMouseClicked="#OnMouseClicked_Farenhit" prefHeight="28.0" prefWidth="116.0" text="65">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="txtIn_Farenhit131" alignment="CENTER" disable="true" editable="false" layoutX="285.0" layoutY="120.0" onKeyReleased="#OnMouseClicked_Celsius" onMouseClicked="#OnMouseClicked_Farenhit" prefHeight="28.0" prefWidth="116.0" text="150">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="txtIn_Farenhit132" alignment="CENTER" disable="true" editable="false" layoutX="184.0" layoutY="149.0" onKeyReleased="#OnMouseClicked_Celsius" onMouseClicked="#OnMouseClicked_Farenhit" prefHeight="28.0" prefWidth="71.0" text="375">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="txtIn_Farenhit1311" alignment="CENTER" disable="true" editable="false" layoutX="285.0" layoutY="90.0" onKeyReleased="#OnMouseClicked_Celsius" onMouseClicked="#OnMouseClicked_Farenhit" prefHeight="28.0" prefWidth="116.0" text="93">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="txtIn_Farenhit1312" alignment="CENTER" disable="true" editable="false" layoutX="285.0" layoutY="149.0" onKeyReleased="#OnMouseClicked_Celsius" onMouseClicked="#OnMouseClicked_Farenhit" prefHeight="28.0" prefWidth="116.0" text="190">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="txtIn_Farenhit1315" alignment="CENTER" disable="true" editable="false" layoutX="184.0" layoutY="120.0" onKeyReleased="#OnMouseClicked_Celsius" onMouseClicked="#OnMouseClicked_Farenhit" prefHeight="28.0" prefWidth="71.0" text="300">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="txtIn_Farenhit1314" alignment="CENTER" disable="true" editable="false" layoutX="184.0" layoutY="90.0" onKeyReleased="#OnMouseClicked_Celsius" onMouseClicked="#OnMouseClicked_Farenhit" prefHeight="28.0" prefWidth="71.0" text="200">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="txtIn_Farenhit1313" alignment="CENTER" disable="true" editable="false" layoutX="184.0" layoutY="61.0" onKeyReleased="#OnMouseClicked_Celsius" onMouseClicked="#OnMouseClicked_Farenhit" prefHeight="28.0" prefWidth="71.0" text="150">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="txtIn_Farenhit1321" alignment="CENTER" disable="true" editable="false" layoutX="184.0" layoutY="173.0" onKeyReleased="#OnMouseClicked_Celsius" onMouseClicked="#OnMouseClicked_Farenhit" prefHeight="28.0" prefWidth="71.0" text="500">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="txtIn_Farenhit13211" alignment="CENTER" disable="true" editable="false" layoutX="285.0" layoutY="177.0" onKeyReleased="#OnMouseClicked_Celsius" onMouseClicked="#OnMouseClicked_Farenhit" prefHeight="28.0" prefWidth="116.0" text="260">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label blendMode="DARKEN" contentDisplay="CENTER" layoutX="21.0" layoutY="149.0" prefHeight="29.0" prefWidth="120.0" text="Hot =" textAlignment="CENTER" textFill="#e35012" textOverrun="CENTER_WORD_ELLIPSIS">
+                                       <effect>
+                                          <Blend />
+                                       </effect>
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                          </content>
                         </Tab>
                         <Tab text="gr/oz">
                            <content>

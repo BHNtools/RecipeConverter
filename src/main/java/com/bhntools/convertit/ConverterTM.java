@@ -1,5 +1,7 @@
 package com.bhntools.convertit;
 
+
+import com.sun.javafx.tk.ImageLoader;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
@@ -11,8 +13,10 @@ import static javafx.application.Application.launch;
 import static javafx.application.Application.launch;
 import javafx.application.Platform;
 import javafx.event.EventHandler;
+import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 import javafx.stage.WindowEvent;
+import javax.swing.ImageIcon;
 
 
 
@@ -32,8 +36,6 @@ public class ConverterTM extends Application {
         stage.setTitle("PROJECT : Maven JavaFx - CONVERTER");
         stage.setScene(scene);
         
-
-
         //Disable resize scene
         stage.setResizable(false);
         

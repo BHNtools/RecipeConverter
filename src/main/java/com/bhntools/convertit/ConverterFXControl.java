@@ -1,21 +1,28 @@
 package com.bhntools.convertit;
 
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.control.Alert;
+import javafx.scene.control.DialogPane;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Tooltip;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.ColumnConstraints;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Priority;
+import javafx.scene.layout.StackPane;
+import javax.swing.ImageIcon;
 
-import com.bhntools.convertit.TmpConvertion;
 
 public class ConverterFXControl implements Initializable {
     
@@ -49,7 +56,7 @@ public class ConverterFXControl implements Initializable {
         txtIn_Farenhit.setText("32");
     }
     
-
+    
     //_Menu_File :: MenuItem Close
     @FXML public void OnClicMenuItem_Close(ActionEvent event) {
         Platform.exit();
@@ -57,6 +64,31 @@ public class ConverterFXControl implements Initializable {
       }
     
     
+    //_Menu_Help :: MenuItem About
+    @FXML public void On_Action_menuItem_How(ActionEvent event) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Information");
+        alert.setHeaderText("Hey, Interested :)");
+        alert.setContentText("Ooops, This part is under construction. "
+                + "Please Contact the developer if you wante it soon.!");
+        alert.showAndWait();
+    }
+   
+    //_Menu_Help :: MenuItem About
+    @FXML public void On_Action_menuItem_About(ActionEvent event) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("About RecipeConverter");
+        
+        Image imageViewTools = new LocatedImage("images/RecepiesIcons.png");
+        ImageView imageViewTool = new ImageView(imageViewTools);
+        alert.setGraphic(imageViewTool);
+        alert.setHeaderText("Recipe Converter");
+        alert.setHeaderText("RecipeConverter-V.1.0.0");
+        alert.setContentText("BHNtools-Copyright©2017.");
+        alert.showAndWait(); 
+    }
+    
+
     /*__________________________TEMPRATURE _ BEGIN*/ 
     @FXML public void OnMouseClicked_Celsius(){
         // GET FARENHIT USER VALUE
@@ -70,6 +102,7 @@ public class ConverterFXControl implements Initializable {
         txtIn_Celsius.setText(str_converted_value);  
     }
     
+    
     @FXML public void OnMouseClicked_Farenhit(){                
         // GET FARENHIT USER VALUE
         String TextCelsius;
@@ -82,6 +115,18 @@ public class ConverterFXControl implements Initializable {
         txtIn_Farenhit.setText(str_converted_value);  
     }
     /*__________________________TEMPRATURE _ END*/
+    
+    
+    
+    /* ONGLET TODO */
+    @FXML public void OnSelection_Onglet() { 
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Information DIALOG");
+            alert.setHeaderText("Hey, Interested :)");
+            alert.setContentText("Ooops, This part is under construction. "
+                    + "Please Contact the developer if you wante it soon.!");
+            alert.showAndWait();
+    }
     
     
     @Override

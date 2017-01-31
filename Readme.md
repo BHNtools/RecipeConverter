@@ -1,19 +1,21 @@
-#ConvertIT 1.0.0 : Conversion tool.
+#RecipeConverter 1.0.0 : Cooking Ingredients Conversion.
+
+![alt tag](snapshots/RecipeConverter_About.png)
 
 
 ##Authors & Maintainer
-###====================
+###========================
 BEN HASSINE Najla, bhndevtools@gmail.com .
 
 
 ##Usage
-###=====
-url : 
+###=========
+![alt tag](snapshots/RecipeConverter_TM.png)
 
 
 ##Building
 ###========
-git clone https://github.com/
+https://github.com/BHNtools/RecipeConverter
 
 
 ##License
